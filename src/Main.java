@@ -7,11 +7,16 @@ public class Main {
 
         Author author = new Author("Стивен", "Кинг");
         Book book=new Book("Мастер и Маргарита", author,2003 );
-        System.out.println("book = " + book.getName()+" "+book.getAuthor().getName()+" "+book.getAuthor().getFirstName()+" "+book.getYear());
+        System.out.println(book);
         Author author1= new Author("Михаил","Булгаков");
         Book book1=new Book("Морфий",author1,1099);
         book1.setYear(1999);
-        System.out.println("book1 = " + book1.getName()+" "+book1.getAuthor().getName()+" "+book1.getAuthor().getFirstName()+" "+book1.getYear());
+        System.out.println(book1);
+        Author author2= new Author("Иван","Иванов" );
+        Book book2 = new Book("Нулевая книга", author2, 1999);
+        Book book3=new Book("Книга сравнения", author1,1999);
+        System.out.println(book2.equals(book3));
 
     }
     }
+

@@ -13,5 +13,9 @@ public class Author {
 
     public String getFirstName() {
         return firstName;
+
+    }
+    public String toString(){
+        return "Автор книги: " + this.name+ " " +this.firstName;
     }
 }
